@@ -8,6 +8,6 @@ RUN set -x && \
   apk add --virtual build_deps $BUILD_DEPS &&  \
   cp /usr/bin/envsubst /usr/local/bin/envsubst && \
   apk del build_deps && \
-  apk add bash
+  apk add bash tzdata
 
 ENTRYPOINT [ "bash" ]
